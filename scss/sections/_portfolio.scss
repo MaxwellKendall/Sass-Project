@@ -1,0 +1,55 @@
+.portfolio-title {
+    color: black;
+    font-family: "Lobster", sans-serif;
+    background-color: white;
+
+}
+.portfolio {
+    margin: auto;
+    background-color: white;
+    @include media-query($tablet) {
+        text-align: center;
+        padding: .25em .25em;
+        display: block;
+        background-color: white;
+    }
+    @include media-query($desktop) {
+        text-align: center;
+        vertical-align: top;
+        padding: 1em 1em;
+        width: calc(100% - 2em);
+        display: inline-block;
+    }
+
+
+    .img {
+    text-align: center;
+    background-color: white;
+    @include media-query($tablet) {
+        display: inline-block;
+        margin: auto;
+        padding: .25em;
+        vertical-align: top;
+        margin: auto;
+        width: 40%;
+    }
+    @include media-query($desktop) {
+        display: inline-block;
+        padding: .25em;
+        width: 33%;
+        vertical-align: top;
+        text-align: center;
+    }
+
+        img {
+            width: calc(100% - 2em);
+            padding-bottom: .25em;
+    }
+        p {
+            padding-bottom: 2.5em;
+            font-family: sans-serif;
+            background-color: white;
+    }
+}
+
+}

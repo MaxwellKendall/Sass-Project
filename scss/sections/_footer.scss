@@ -1,0 +1,50 @@
+footer {
+    display: inline-block;
+    width: 100%;
+    background-color: $background;
+    margin: auto;
+    min-height: calc(100vh - 4246.88px)
+}
+
+
+hr {
+    width: 90%;
+    color: $background;
+}
+
+.footer-section div a:hover {
+    color: orange;
+}
+
+.maxwell-kendall {
+    padding-left: 2em;
+    display: inline;
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+.back-to-top {
+    padding-right: 2em;
+    display: inline;
+    float: right;
+    text-decoration: none;
+    color: black;
+    @include media-query($tablet) {
+        display: none;
+    }
+}
+
+    .non-mobile {
+        @include media-query($tablet) {
+            display: inline-block;
+            float: right;
+            padding: 0 2em;
+
+            a {
+                display: inline;
+                float: right;
+                padding: 0 1em;
+            }
+
+                }
+        }

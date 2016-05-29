@@ -1,0 +1,32 @@
+/*  Main Page Elements  */
+
+@include font-size($size);
+
+    .profile-pic-background,
+    .container,
+    .img,
+    .main-nav,
+    .portfolio,
+    .contact {
+        @extend %basic-layout;
+    }
+
+    a,
+    li,
+    h1,
+    h2,
+    h3,
+    p {
+        @extend %basic-text-style;
+    }
+
+    a {
+        padding: .25em;
+    &:hover {
+        color: orange;
+    }
+}
+
+.non-mobile {
+    display: none;
+}

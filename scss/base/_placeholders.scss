@@ -1,0 +1,20 @@
+
+    %basic-layout {
+        margin: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    %basic-text-style {
+        font-family: $font;
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+
+    }
+
+    %clearfix {
+        content: " ";
+        display: table;
+        clear: both;
+    }
