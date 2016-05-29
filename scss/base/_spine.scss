@@ -19,7 +19,9 @@
     p {
         @extend %basic-text-style;
     }
-
+    p {
+        padding-right: .5em;
+    }
     a {
         padding: .25em;
     &:hover {
