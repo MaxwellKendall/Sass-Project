@@ -3,7 +3,7 @@
 .img,
 .main-nav,
 .portfolio,
-.contact {
+.contact, #king {
   margin: auto;
   box-sizing: border-box;
   text-align: center; }
@@ -13,7 +13,7 @@ li,
 h1,
 h2,
 h3,
-p {
+p, #king {
   font-family: "Lobster", "Open Sans", "sans-serif";
   text-decoration: none;
   text-align: center;
@@ -32,6 +32,12 @@ h2 {
 h3 {
   font-size: 24px; }
 
+h1 {
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    h1 {
+      margin: auto; } }
+
 p {
   padding-right: .5em; }
 
@@ -42,6 +48,16 @@ a {
 
 .non-mobile {
   display: none; }
+
+#king {
+  cursor: pointer;
+  margin: 0;
+  display: inline; }
+  @media (min-width: 768px) {
+    #king {
+      display: none; } }
+  #king:hover {
+    color: orange; }
 
 .portfolio-title {
   color: black;

@@ -1,0 +1,13 @@
+#king {
+    @extend %basic-layout;
+    @extend %basic-text-style;
+    cursor: pointer;
+    margin: 0;
+    display: inline;
+    @include media-query($tablet) {
+        display: none;
+    }
+    &:hover {
+        color: orange;
+    }
+}

@@ -19,6 +19,12 @@
     p {
         @extend %basic-text-style;
     }
+    h1 {
+        margin-bottom: 0;
+        @include media-query($tablet) {
+            margin: auto;
+        }
+    }
     p {
         padding-right: .5em;
     }
