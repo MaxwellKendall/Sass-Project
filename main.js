@@ -2,9 +2,16 @@ var $button = $("#king");
 var $nav = $("ul");
 
 $button.click(function(){
- if ($($nav).hasClass("hidden")){
-     $($nav).show().removeClass("hidden");
- } else {
-    $($nav).hide().addClass("hidden");
-    }
+if ($nav.is(":visible")) {
+    $nav.css('display', 'none');
+} else {
+       $nav.css('display', '');
+   }
 })
+
+$(window).resize(function(){
+	if ($(".back-to-top").css("display") == "none"){
+        $nav.css('display', '');
+        //$nav.css('display', '');
+	}
+});
